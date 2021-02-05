@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www.globalsai.com.mx [NC]
+
+RewriteRule ^(.*)$ http://globalsai.com.mx/$1 [L,R=302]
